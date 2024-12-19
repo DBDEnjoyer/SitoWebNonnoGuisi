@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatore Vento Reale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcolatore Vento Reale</h1>
+        <form id="windForm">
+            <div class="form-group">
+                <label for="windSpeed">Velocità del vento misurata (nodi):</label>
+                <input type="number" id="windSpeed" name="windSpeed" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="windAngle">Angolo del vento misurato (°):</label>
+                <input type="number" id="windAngle" name="windAngle" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="boatSpeed">Velocità della barca (nodi):</label>
+                <input type="number" id="boatSpeed" name="boatSpeed" step="0.1" required>
+            </div>
+            <button type="submit">Calcola</button>
+        </form>
+        <div id="result" class="result">
+            <!-- Ergebnisse werden hier angezeigt -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
