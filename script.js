@@ -7,7 +7,7 @@ document.getElementById('windForm').addEventListener('submit', function(event) {
     const boatSpeed = parseFloat(document.getElementById('boatSpeed').value);
 
     // Konvertiere Winkel in Radiant
-    const windAngle = 180 - windAngle;
+    const windAngle = 180-windAngle;
     const windAngleRad = windAngle * (Math.PI / 180);
 
     // Apparent Wind Vektor
